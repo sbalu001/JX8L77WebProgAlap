@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>JX8L77 - Űrlap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    html, body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    section {
+        width: 50rem;
+
+        background-color: rgb(73, 138, 160);
+        padding: 1rem;
+        text-align: center;
+
+        border-radius: 0.5rem;
+        box-shadow: inset 0 0 0.5 rem 0 #00000066,
+                          0.25 rem 0.25rem 0.5rem 0.25rem #000000aa;  
+    }
+
+    header {
+        width: 50rem;
+
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    footer {
+        width: 50rem;
+
+        border-top: 0.1rem solid black;
+
+        padding: 1rem;
+        text-align: right;
+        font-size: 0.8rem;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        text-align: left;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .sidebyside {
+        display: first;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: left;
+    }
+
+    .sidebyside>input {
+        width: 10rem;
+    }
+
+</style>  
+
+</head>
+<body>
+    <header>
+        HTML5 Űrlap - JX8L77
+    </header>
+        <section>
+            <form action="feldolgozo.php" target="_self" method="post" id="urlap" name="urlap">
+                <label for="nev">
+                    Név:
+                    <input type="text" id="nev" name="nev" required pattern="([A-ZÁÉÍÓÖŐÚÜŰ a-záéíóöőúüű]){4,}"title="Ird be a neved" placeholder="Ird be a neved" autofocus autocomplete="off">
+                </label>
+                
+                <label for="pin">
+                    PIN kód:
+                    <input type="password" id="pin" name="pin" required pattern="([0-9]){4}"title="4 számjegyű PIN kód" placeholder="PIN kód">
+                </label>
+
+                <label for="fav_fruit">
+                    Kedvenc gyümölcs:
+                    <input list="gyümölcsök" id="fav_fruit" name="fav_fruit" placeholder="" title="Alma, Körte, Szőlő, Banán, Narancs">
+                     <datalist id="gyumolcsok">
+                        <option value="alma">Alma</option>
+                        <option value="körte">Körte</option>
+                        <option value="szőlő">Szőlő</option>
+                        <option value="banán">Banán</option>
+                        <option value="narancs">Narancs</option>
+                     </datalist>
+                </label>
+                
+                <label for="age">
+                    Életkor:
+                    <input type="number" id="age" name="age" min="1" max="100" step="1" 
+                    title="1 és 100 közötti érték" placeholder="">
+                </label>
+
+                <label for="feet_size">
+                    Lábméret:
+                    <input type="number" id="feet_size" name="feet_size" min="25" max="50" step="0.5" title="25 és 50 közötti érték" placeholder="">
+                </label>
+
+                <label for="confidence">
+                    Önbizalom:
+                    <input type="range" id="confidence" name="confidence" min="0" max="100" step="0.1" title="0 és 100 közötti érték">
+                </label>
+                <br>
+
+            </form>
+
+            <div class="sidebyside">
+                    <input type="submit" value="Elküld" form="urlap">
+                    <input type="submit" value="Elküld ellenőrzés nélkül" formnovalidate
+                    form="urlap">
+                </div>
+        </section>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Megjelenítési tulajdonság</title>  
+
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            margin: 20 px;
+        }
+        h1{
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        b{
+            font-size: 1.5em;
+        }
+
+        .SB2,.SB3,.SB4,.SB5 {
+            background: #66c87a;
+            padding: 10px;
+            margin-bottom: 10px;
+            min-width: 250px;
+            max-width: 70vw;
+        }
+
+        .SB1.item{
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            min-width: 250px;
+            max-width: 50vw;
+        }
+        .SB2.item {
+            display: inline;
+        }
+        .SB3.item {
+            display: block;
+        }
+        .SB4.item {
+            display: inline-block;
+        }
+        .SB5.item {
+            display: flex;
+        }
+        .item {
+            background: #7d5bbf;
+            color: #222;
+            padding: 5px 15 px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            font-size: 1em;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Megjelenítési tulajdonság</h1>
+
+    <b>display: none:</b>
+    <div class="SB1">
+        <span class="item">PTI BSc 1</span>
+        <span class="item">PTI BSc 2</span> 
+        <span class="item">PTI BSc 3</span>
+    </div>
+    
+    <b>display: inline:</b>
+    <div class="SB2">
+        <span class="item">PTI BSc 1</span>
+        <span class="item">PTI BSc 2</span> 
+        <span class="item">PTI BSc 3</span>
+    </div>
+
+    <b>display: block:</b>
+    <div class="SB3">
+        <span class="item">PTI BSc 1</span>
+        <span class="item">PTI BSc 2</span> 
+        <span class="item">PTI BSc 3</span>
+    </div>
+
+    <b>display: inline-block:</b>
+    <div class="SB4">
+        <span class="item">PTI BSc 1</span>
+        <span class="item">PTI BSc 2</span> 
+        <span class="item">PTI BSc 3</span>
+    </div>
+
+     <b>display: flex:</b>
+     <div class="SB5">
+        <span class="item">PTI BSc 1</span>
+        <span class="item">PTI BSc 2</span> 
+        <span class="item">PTI BSc 3</span>
+    </div>
+</body>
+
+</html>

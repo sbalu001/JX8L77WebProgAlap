@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+
+    <style>
+        .inline {
+            list-style-type: upper-latin;
+            color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Lista készítése</h1>
+
+    <h3>a. Rendezetlen lista</h3>
+    <ul>
+        <li>piros</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+    </ul>
+
+    <ul style="
+        color: blue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        list-style-type: square;
+        margin-left: -4px;">
+
+        <li>sárga</li>
+        <li>fehér</li>
+        <li>zöld</li>
+        <li>kék</li>
+    </ul>
+
+    <h3>b. Rendezett lista</h3>
+    <ol class="inline-list">
+        <li>pink</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+    </ol>
+
+    <h3>c. Nagybetűk</h3>
+    <ol style="list-style-type: upper-latin;">
+        <li>pink</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+
+    <h3>d. Római számok</h3>
+    <ol style="list-style-type: upper-roman;" type="1">
+        <li>1. ÉVF</li>
+        <li>2. ÉVF</li>
+        <li>3. ÉVF</li>
+    </ol>
+    
+    <h3>e. Inline style</h3>
+    <ol class="inline">
+        <li>Sárga</li>
+        <li>Kék</li>
+        <li>Zöld</li>
+        <li>Pink</li>
+    </ol>
+
+    <h3>f. HTML Description Lists</h3>
+        <dl style="color: #0088ff;
+        font-family: Verdana, Geneva, TAHOMA, sans-serif;">
+
+            <style>dt { font-weight: bold;}</style>
+            <dt>Farkas</dt>
+                <dd>Kutyaszerű ragadozó emlős</dd>
+            <dt>Fájl</dt>
+                <dd>Szöveges állomány</dd>
+            <dt>Oroszlán</dt>
+                <dd>Macskaszerű ragadozó emlős</dd>
+                <dd>Az állatok királya</dd>
+        </dl>
+
+        <h3>g. Embedded HTML lists</h3>
+        <h3 style="color: #ff00ff">Kedvenc reggeli italaim</h3>
+        <ul>
+            <li>Kávé</li>
+            <li>Tea
+                <ul>
+                    <li>Fekete</li>
+                    <li>Zöld</li>
+                </ul>
+            </li>
+            <li>Tek</li>
+        </ul>
+
+        <h3>h. Control List Counting</h3>
+        <ol start="5">
+            <li>KL</li>
+            <li>EL</li>
+            <li>BL</li>
+        </ol>
+
+    
+</body>
+</html>
